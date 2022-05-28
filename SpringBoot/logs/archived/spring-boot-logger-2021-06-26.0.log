@@ -1,0 +1,185 @@
+2021-06-26 16:34:02,911 INFO org.springframework.boot.StartupInfoLogger [main] Starting Application on LAPTOP-N02FD7OP with PID 20288 (D:\programs\springboot\SpringBoot\target\classes started by dharm in D:\programs\springboot\SpringBoot)
+2021-06-26 16:34:02,913 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.3.5.RELEASE, Spring v5.2.10.RELEASE
+2021-06-26 16:34:02,913 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-06-26 16:34:03,563 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8001 (http)
+2021-06-26 16:34:03,569 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8001"]
+2021-06-26 16:34:03,589 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2021-06-26 16:34:03,590 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-06-26 16:34:03,634 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2021-06-26 16:34:03,635 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 687 ms
+2021-06-26 16:34:03,745 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService
+2021-06-26 16:34:03,747 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'asynchExecutor'
+2021-06-26 16:34:03,984 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'taskScheduler'
+2021-06-26 16:34:03,989 WARN org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration [main] Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2021-06-26 16:34:04,001 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8001"]
+2021-06-26 16:34:04,015 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8001 (http) with context path ''
+2021-06-26 16:34:04,024 INFO org.springframework.boot.StartupInfoLogger [main] Started Application in 1.41 seconds (JVM running for 1.883)
+2021-06-26 16:34:29,215 INFO org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin [RMI TCP Connection(7)-127.0.0.1] Application shutdown requested.
+2021-06-26 16:34:29,395 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [RMI TCP Connection(7)-127.0.0.1] Shutting down ExecutorService 'taskScheduler'
+2021-06-26 16:34:29,396 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [RMI TCP Connection(7)-127.0.0.1] Shutting down ExecutorService 'asynchExecutor'
+2021-06-26 16:35:10,185 INFO org.springframework.boot.StartupInfoLogger [main] Starting Application on LAPTOP-N02FD7OP with PID 20208 (D:\programs\springboot\SpringBoot\target\SpringBoot-0.0.1-SNAPSHOT-spring-boot.jar started by dharm in D:\programs\springboot\SpringBoot)
+2021-06-26 16:35:10,223 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.3.5.RELEASE, Spring v5.2.10.RELEASE
+2021-06-26 16:35:10,226 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-06-26 16:35:11,860 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8001 (http)
+2021-06-26 16:35:11,879 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8001"]
+2021-06-26 16:35:11,882 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2021-06-26 16:35:11,886 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-06-26 16:35:11,994 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2021-06-26 16:35:11,995 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1661 ms
+2021-06-26 16:35:12,316 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService
+2021-06-26 16:35:12,320 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'asynchExecutor'
+2021-06-26 16:35:12,808 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'taskScheduler'
+2021-06-26 16:35:12,825 WARN org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration [main] Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2021-06-26 16:35:12,853 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8001"]
+2021-06-26 16:35:12,891 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8001 (http) with context path ''
+2021-06-26 16:35:12,922 INFO org.springframework.boot.StartupInfoLogger [main] Started Application in 3.4 seconds (JVM running for 3.884)
+2021-06-26 16:36:01,008 INFO com.example.service.VaccineService [scheduling-1] vaccineAlert call on:: 26-06-2021
+2021-06-26 16:37:00,454 INFO com.example.service.VaccineService [scheduling-1] vaccineAlert call on:: 26-06-2021
+2021-06-26 16:38:00,422 INFO com.example.service.VaccineService [scheduling-1] vaccineAlert call on:: 26-06-2021
+2021-06-26 16:39:00,510 INFO com.example.service.VaccineService [scheduling-1] vaccineAlert call on:: 26-06-2021
+2021-06-26 16:40:00,396 INFO com.example.service.VaccineService [scheduling-1] vaccineAlert call on:: 26-06-2021
+2021-06-26 16:41:07,933 INFO com.example.service.VaccineService [scheduling-1] vaccineAlert call on:: 26-06-2021
+2021-06-26 16:42:00,454 INFO com.example.service.VaccineService [scheduling-1] vaccineAlert call on:: 26-06-2021
+2021-06-26 16:43:00,773 INFO com.example.service.VaccineService [scheduling-1] vaccineAlert call on:: 26-06-2021
+2021-06-26 16:44:00,375 INFO com.example.service.VaccineService [scheduling-1] vaccineAlert call on:: 26-06-2021
+2021-06-26 16:45:00,775 INFO com.example.service.VaccineService [scheduling-1] vaccineAlert call on:: 26-06-2021
+2021-06-26 16:46:00,370 INFO com.example.service.VaccineService [scheduling-1] vaccineAlert call on:: 26-06-2021
+2021-06-26 16:47:00,769 INFO com.example.service.VaccineService [scheduling-1] vaccineAlert call on:: 26-06-2021
+2021-06-26 16:48:00,427 INFO com.example.service.VaccineService [scheduling-1] vaccineAlert call on:: 26-06-2021
+2021-06-26 16:49:00,827 INFO com.example.service.VaccineService [scheduling-1] vaccineAlert call on:: 26-06-2021
+2021-06-26 16:50:00,382 INFO com.example.service.VaccineService [scheduling-1] vaccineAlert call on:: 26-06-2021
+2021-06-26 16:51:00,486 INFO com.example.service.VaccineService [scheduling-1] vaccineAlert call on:: 26-06-2021
+2021-06-26 16:52:00,392 INFO com.example.service.VaccineService [scheduling-1] vaccineAlert call on:: 26-06-2021
+2021-06-26 16:53:00,341 INFO com.example.service.VaccineService [scheduling-1] vaccineAlert call on:: 26-06-2021
+2021-06-26 16:54:00,367 INFO com.example.service.VaccineService [scheduling-1] vaccineAlert call on:: 26-06-2021
+2021-06-26 16:55:00,397 INFO com.example.service.VaccineService [scheduling-1] vaccineAlert call on:: 26-06-2021
+2021-06-26 16:56:00,408 INFO com.example.service.VaccineService [scheduling-1] vaccineAlert call on:: 26-06-2021
+2021-06-26 16:57:00,365 INFO com.example.service.VaccineService [scheduling-1] vaccineAlert call on:: 26-06-2021
+2021-06-26 16:58:00,305 INFO com.example.service.VaccineService [scheduling-1] vaccineAlert call on:: 26-06-2021
+2021-06-26 16:59:00,762 INFO com.example.service.VaccineService [scheduling-1] vaccineAlert call on:: 26-06-2021
+2021-06-26 17:00:00,351 INFO com.example.service.VaccineService [scheduling-1] vaccineAlert call on:: 26-06-2021
+2021-06-26 17:01:00,314 INFO com.example.service.VaccineService [scheduling-1] vaccineAlert call on:: 26-06-2021
+2021-06-26 17:02:00,807 INFO com.example.service.VaccineService [scheduling-1] vaccineAlert call on:: 26-06-2021
+2021-06-26 17:03:00,429 INFO com.example.service.VaccineService [scheduling-1] vaccineAlert call on:: 26-06-2021
+2021-06-26 17:04:00,541 INFO com.example.service.VaccineService [scheduling-1] vaccineAlert call on:: 26-06-2021
+2021-06-26 17:05:00,275 INFO com.example.service.VaccineService [scheduling-1] vaccineAlert call on:: 26-06-2021
+2021-06-26 17:06:01,042 INFO com.example.service.VaccineService [scheduling-1] vaccineAlert call on:: 26-06-2021
+2021-06-26 17:07:01,640 INFO com.example.service.VaccineService [scheduling-1] vaccineAlert call on:: 26-06-2021
+2021-06-26 17:08:00,915 INFO com.example.service.VaccineService [scheduling-1] vaccineAlert call on:: 26-06-2021
+2021-06-26 17:09:10,810 INFO com.example.service.VaccineService [scheduling-1] vaccineAlert call on:: 26-06-2021
+2021-06-26 17:10:00,662 INFO com.example.service.VaccineService [scheduling-1] vaccineAlert call on:: 26-06-2021
+2021-06-26 17:11:02,663 INFO com.example.service.VaccineService [scheduling-1] vaccineAlert call on:: 26-06-2021
+2021-06-26 17:12:00,335 INFO com.example.service.VaccineService [scheduling-1] vaccineAlert call on:: 26-06-2021
+2021-06-26 17:13:00,784 INFO com.example.service.VaccineService [scheduling-1] vaccineAlert call on:: 26-06-2021
+2021-06-26 17:14:02,482 INFO com.example.service.VaccineService [scheduling-1] vaccineAlert call on:: 26-06-2021
+2021-06-26 17:15:01,084 INFO com.example.service.VaccineService [scheduling-1] vaccineAlert call on:: 26-06-2021
+2021-06-26 17:16:00,358 INFO com.example.service.VaccineService [scheduling-1] vaccineAlert call on:: 26-06-2021
+2021-06-26 17:17:00,883 INFO com.example.service.VaccineService [scheduling-1] vaccineAlert call on:: 26-06-2021
+2021-06-26 17:18:02,157 INFO com.example.service.VaccineService [scheduling-1] vaccineAlert call on:: 26-06-2021
+2021-06-26 17:19:01,497 INFO com.example.service.VaccineService [scheduling-1] vaccineAlert call on:: 26-06-2021
+2021-06-26 17:20:06,906 INFO com.example.service.VaccineService [scheduling-1] vaccineAlert call on:: 26-06-2021
+2021-06-26 17:21:01,639 INFO com.example.service.VaccineService [scheduling-1] vaccineAlert call on:: 26-06-2021
+2021-06-26 17:22:01,346 INFO com.example.service.VaccineService [scheduling-1] vaccineAlert call on:: 26-06-2021
+2021-06-26 17:23:00,704 INFO com.example.service.VaccineService [scheduling-1] vaccineAlert call on:: 26-06-2021
+2021-06-26 17:24:01,265 INFO com.example.service.VaccineService [scheduling-1] vaccineAlert call on:: 26-06-2021
+2021-06-26 17:25:00,798 INFO com.example.service.VaccineService [scheduling-1] vaccineAlert call on:: 26-06-2021
+2021-06-26 17:26:00,323 INFO com.example.service.VaccineService [scheduling-1] vaccineAlert call on:: 26-06-2021
+2021-06-26 17:27:00,428 INFO com.example.service.VaccineService [scheduling-1] vaccineAlert call on:: 26-06-2021
+2021-06-26 17:28:00,312 INFO com.example.service.VaccineService [scheduling-1] vaccineAlert call on:: 26-06-2021
+2021-06-26 17:29:00,347 INFO com.example.service.VaccineService [scheduling-1] vaccineAlert call on:: 26-06-2021
+2021-06-26 17:30:00,301 INFO com.example.service.VaccineService [scheduling-1] vaccineAlert call on:: 26-06-2021
+2021-06-26 17:31:00,357 INFO com.example.service.VaccineService [scheduling-1] vaccineAlert call on:: 26-06-2021
+2021-06-26 17:32:00,765 INFO com.example.service.VaccineService [scheduling-1] vaccineAlert call on:: 26-06-2021
+2021-06-26 17:33:00,304 INFO com.example.service.VaccineService [scheduling-1] vaccineAlert call on:: 26-06-2021
+2021-06-26 17:34:00,369 INFO com.example.service.VaccineService [scheduling-1] vaccineAlert call on:: 26-06-2021
+2021-06-26 17:35:00,718 INFO com.example.service.VaccineService [scheduling-1] vaccineAlert call on:: 26-06-2021
+2021-06-26 17:36:00,345 INFO com.example.service.VaccineService [scheduling-1] vaccineAlert call on:: 26-06-2021
+2021-06-26 17:37:00,778 INFO com.example.service.VaccineService [scheduling-1] vaccineAlert call on:: 26-06-2021
+2021-06-26 17:38:00,329 INFO com.example.service.VaccineService [scheduling-1] vaccineAlert call on:: 26-06-2021
+2021-06-26 17:39:00,450 INFO com.example.service.VaccineService [scheduling-1] vaccineAlert call on:: 26-06-2021
+2021-06-26 17:40:00,321 INFO com.example.service.VaccineService [scheduling-1] vaccineAlert call on:: 26-06-2021
+2021-06-26 17:41:00,348 INFO com.example.service.VaccineService [scheduling-1] vaccineAlert call on:: 26-06-2021
+2021-06-26 17:42:01,173 INFO com.example.service.VaccineService [scheduling-1] vaccineAlert call on:: 26-06-2021
+2021-06-26 17:43:00,685 INFO com.example.service.VaccineService [scheduling-1] vaccineAlert call on:: 26-06-2021
+2021-06-26 17:44:00,723 INFO com.example.service.VaccineService [scheduling-1] vaccineAlert call on:: 26-06-2021
+2021-06-26 17:45:00,530 INFO com.example.service.VaccineService [scheduling-1] vaccineAlert call on:: 26-06-2021
+2021-06-26 17:46:01,012 INFO com.example.service.VaccineService [scheduling-1] vaccineAlert call on:: 26-06-2021
+2021-06-26 17:47:00,571 INFO com.example.service.VaccineService [scheduling-1] vaccineAlert call on:: 26-06-2021
+2021-06-26 17:48:04,337 INFO com.example.service.VaccineService [scheduling-1] vaccineAlert call on:: 26-06-2021
+2021-06-26 17:49:01,035 INFO com.example.service.VaccineService [scheduling-1] vaccineAlert call on:: 26-06-2021
+2021-06-26 17:50:00,311 INFO com.example.service.VaccineService [scheduling-1] vaccineAlert call on:: 26-06-2021
+2021-06-26 17:51:00,573 INFO com.example.service.VaccineService [scheduling-1] vaccineAlert call on:: 26-06-2021
+2021-06-26 17:52:00,278 INFO com.example.service.VaccineService [scheduling-1] vaccineAlert call on:: 26-06-2021
+2021-06-26 17:53:01,548 INFO com.example.service.VaccineService [scheduling-1] vaccineAlert call on:: 26-06-2021
+2021-06-26 17:54:01,170 INFO com.example.service.VaccineService [scheduling-1] vaccineAlert call on:: 26-06-2021
+2021-06-26 17:55:00,779 INFO com.example.service.VaccineService [scheduling-1] vaccineAlert call on:: 26-06-2021
+2021-06-26 17:56:00,451 INFO com.example.service.VaccineService [scheduling-1] vaccineAlert call on:: 26-06-2021
+2021-06-26 17:57:00,343 INFO com.example.service.VaccineService [scheduling-1] vaccineAlert call on:: 26-06-2021
+2021-06-26 17:58:00,635 INFO com.example.service.VaccineService [scheduling-1] vaccineAlert call on:: 26-06-2021
+2021-06-26 17:59:00,760 INFO com.example.service.VaccineService [scheduling-1] vaccineAlert call on:: 26-06-2021
+2021-06-26 18:00:00,317 INFO com.example.service.VaccineService [scheduling-1] vaccineAlert call on:: 26-06-2021
+2021-06-26 18:29:59,115 INFO com.example.service.VaccineService [scheduling-1] vaccineAlert call on:: 26-06-2021
+2021-06-26 18:30:00,241 INFO com.example.service.VaccineService [scheduling-1] vaccineAlert call on:: 26-06-2021
+2021-06-26 18:31:01,380 INFO com.example.service.VaccineService [scheduling-1] vaccineAlert call on:: 26-06-2021
+2021-06-26 18:32:01,228 INFO com.example.service.VaccineService [scheduling-1] vaccineAlert call on:: 26-06-2021
+2021-06-26 18:33:01,593 INFO com.example.service.VaccineService [scheduling-1] vaccineAlert call on:: 26-06-2021
+2021-06-26 18:34:00,762 INFO com.example.service.VaccineService [scheduling-1] vaccineAlert call on:: 26-06-2021
+2021-06-26 18:35:00,999 INFO com.example.service.VaccineService [scheduling-1] vaccineAlert call on:: 26-06-2021
+2021-06-26 18:36:01,129 INFO com.example.service.VaccineService [scheduling-1] vaccineAlert call on:: 26-06-2021
+2021-06-26 18:37:00,973 INFO com.example.service.VaccineService [scheduling-1] vaccineAlert call on:: 26-06-2021
+2021-06-26 18:38:01,133 INFO com.example.service.VaccineService [scheduling-1] vaccineAlert call on:: 26-06-2021
+2021-06-26 18:39:01,228 INFO com.example.service.VaccineService [scheduling-1] vaccineAlert call on:: 26-06-2021
+2021-06-26 18:40:01,021 INFO com.example.service.VaccineService [scheduling-1] vaccineAlert call on:: 26-06-2021
+2021-06-26 18:41:01,334 INFO com.example.service.VaccineService [scheduling-1] vaccineAlert call on:: 26-06-2021
+2021-06-26 18:42:00,829 INFO com.example.service.VaccineService [scheduling-1] vaccineAlert call on:: 26-06-2021
+2021-06-26 18:43:00,732 INFO com.example.service.VaccineService [scheduling-1] vaccineAlert call on:: 26-06-2021
+2021-06-26 18:44:00,849 INFO com.example.service.VaccineService [scheduling-1] vaccineAlert call on:: 26-06-2021
+2021-06-26 18:45:01,156 INFO com.example.service.VaccineService [scheduling-1] vaccineAlert call on:: 26-06-2021
+2021-06-26 18:46:16,110 INFO com.example.service.VaccineService [scheduling-1] vaccineAlert call on:: 26-06-2021
+2021-06-26 18:47:01,166 INFO com.example.service.VaccineService [scheduling-1] vaccineAlert call on:: 26-06-2021
+2021-06-26 18:48:00,967 INFO com.example.service.VaccineService [scheduling-1] vaccineAlert call on:: 26-06-2021
+2021-06-26 18:49:00,565 INFO com.example.service.VaccineService [scheduling-1] vaccineAlert call on:: 26-06-2021
+2021-06-26 18:50:00,981 INFO com.example.service.VaccineService [scheduling-1] vaccineAlert call on:: 26-06-2021
+2021-06-26 18:51:00,678 INFO com.example.service.VaccineService [scheduling-1] vaccineAlert call on:: 26-06-2021
+2021-06-26 18:52:00,674 INFO com.example.service.VaccineService [scheduling-1] vaccineAlert call on:: 26-06-2021
+2021-06-26 18:53:00,895 INFO com.example.service.VaccineService [scheduling-1] vaccineAlert call on:: 26-06-2021
+2021-06-26 18:54:01,004 INFO com.example.service.VaccineService [scheduling-1] vaccineAlert call on:: 26-06-2021
+2021-06-26 18:55:01,727 INFO com.example.service.VaccineService [scheduling-1] vaccineAlert call on:: 26-06-2021
+2021-06-26 18:56:00,908 INFO com.example.service.VaccineService [scheduling-1] vaccineAlert call on:: 26-06-2021
+2021-06-26 18:57:00,920 INFO com.example.service.VaccineService [scheduling-1] vaccineAlert call on:: 26-06-2021
+2021-06-26 18:58:01,233 INFO com.example.service.VaccineService [scheduling-1] vaccineAlert call on:: 26-06-2021
+2021-06-26 18:59:01,034 INFO com.example.service.VaccineService [scheduling-1] vaccineAlert call on:: 26-06-2021
+2021-06-26 19:00:00,939 INFO com.example.service.VaccineService [scheduling-1] vaccineAlert call on:: 26-06-2021
+2021-06-26 19:01:01,695 INFO com.example.service.VaccineService [scheduling-1] vaccineAlert call on:: 26-06-2021
+2021-06-26 19:02:00,771 INFO com.example.service.VaccineService [scheduling-1] vaccineAlert call on:: 26-06-2021
+2021-06-26 19:03:01,213 INFO com.example.service.VaccineService [scheduling-1] vaccineAlert call on:: 26-06-2021
+2021-06-26 19:04:01,169 INFO com.example.service.VaccineService [scheduling-1] vaccineAlert call on:: 26-06-2021
+2021-06-26 19:05:01,173 INFO com.example.service.VaccineService [scheduling-1] vaccineAlert call on:: 26-06-2021
+2021-06-26 19:06:00,977 INFO com.example.service.VaccineService [scheduling-1] vaccineAlert call on:: 26-06-2021
+2021-06-26 19:07:00,881 INFO com.example.service.VaccineService [scheduling-1] vaccineAlert call on:: 26-06-2021
+2021-06-26 19:08:00,885 INFO com.example.service.VaccineService [scheduling-1] vaccineAlert call on:: 26-06-2021
+2021-06-26 19:09:01,035 INFO com.example.service.VaccineService [scheduling-1] vaccineAlert call on:: 26-06-2021
+2021-06-26 19:10:01,205 INFO com.example.service.VaccineService [scheduling-1] vaccineAlert call on:: 26-06-2021
+2021-06-26 19:11:00,904 INFO com.example.service.VaccineService [scheduling-1] vaccineAlert call on:: 26-06-2021
+2021-06-26 19:12:00,912 INFO com.example.service.VaccineService [scheduling-1] vaccineAlert call on:: 26-06-2021
+2021-06-26 19:13:01,062 INFO com.example.service.VaccineService [scheduling-1] vaccineAlert call on:: 26-06-2021
+2021-06-26 19:14:00,285 INFO com.example.service.VaccineService [scheduling-1] vaccineAlert call on:: 26-06-2021
+2021-06-26 19:15:00,950 INFO com.example.service.VaccineService [scheduling-1] vaccineAlert call on:: 26-06-2021
+2021-06-26 19:16:00,846 INFO com.example.service.VaccineService [scheduling-1] vaccineAlert call on:: 26-06-2021
+2021-06-26 19:17:01,299 INFO com.example.service.VaccineService [scheduling-1] vaccineAlert call on:: 26-06-2021
+2021-06-26 19:18:01,095 INFO com.example.service.VaccineService [scheduling-1] vaccineAlert call on:: 26-06-2021
+2021-06-26 19:19:00,544 INFO com.example.service.VaccineService [scheduling-1] vaccineAlert call on:: 26-06-2021
+2021-06-26 19:20:01,077 INFO com.example.service.VaccineService [scheduling-1] vaccineAlert call on:: 26-06-2021
+2021-06-26 19:21:01,026 INFO com.example.service.VaccineService [scheduling-1] vaccineAlert call on:: 26-06-2021
+2021-06-26 19:22:01,074 INFO com.example.service.VaccineService [scheduling-1] vaccineAlert call on:: 26-06-2021
+2021-06-26 19:23:00,980 INFO com.example.service.VaccineService [scheduling-1] vaccineAlert call on:: 26-06-2021
+2021-06-26 19:24:01,087 INFO com.example.service.VaccineService [scheduling-1] vaccineAlert call on:: 26-06-2021
+2021-06-26 19:25:01,008 INFO com.example.service.VaccineService [scheduling-1] vaccineAlert call on:: 26-06-2021
+2021-06-26 19:26:02,632 INFO com.example.service.VaccineService [scheduling-1] vaccineAlert call on:: 26-06-2021
+2021-06-26 19:27:01,048 INFO com.example.service.VaccineService [scheduling-1] vaccineAlert call on:: 26-06-2021
+2021-06-26 19:28:01,031 INFO com.example.service.VaccineService [scheduling-1] vaccineAlert call on:: 26-06-2021
+2021-06-26 19:29:00,811 INFO com.example.service.VaccineService [scheduling-1] vaccineAlert call on:: 26-06-2021
+2021-06-26 19:30:00,817 INFO com.example.service.VaccineService [scheduling-1] vaccineAlert call on:: 26-06-2021
+2021-06-26 19:31:00,969 INFO com.example.service.VaccineService [scheduling-1] vaccineAlert call on:: 26-06-2021
+2021-06-26 19:32:00,823 INFO com.example.service.VaccineService [scheduling-1] vaccineAlert call on:: 26-06-2021
+2021-06-26 19:33:01,040 INFO com.example.service.VaccineService [scheduling-1] vaccineAlert call on:: 26-06-2021

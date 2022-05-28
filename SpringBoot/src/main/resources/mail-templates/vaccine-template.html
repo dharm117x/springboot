@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<style type="text/css">
+th, td {
+	padding: 15px;
+	text-align: left;
+	border-bottom: 1px solid #ddd;
+}
+
+</style>
+</head>
+<body>
+	<img src="cid:attachment.png" />
+	<p th:text="#{regards}"></p>
+	<br>
+	<table style="width: 100%">
+		<thead>
+			<tr>
+				<th>Vaccine::</th>
+				<th>Fee::</th>
+				<th>Dose 1::</th>
+				<th>Total::</th>
+				<th>Dist::</th>
+				<th>Address::</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr th:each="center: ${centers}">
+				<td><b th:text="${center.vaccine}"></b></td>
+				<td><b th:text="${center.fee}"></b></td>
+				<td><b th:text="${center.available_capacity_dose1}"></b></td>
+				<td><b th:text="${center.available_capacity}"></b></td>
+				<td><b th:text="${center.district_name}"></b></td>
+				<td><b th:text="${center.address}"></b></td>
+			</tr>
+		</tbody>
+	</table>
+	<p th:text="#{signature}"></p>
+
+</body>
+</html>

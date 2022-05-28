@@ -1,0 +1,16 @@
+############### SERVER CONFIG #############
+server:
+  contextPath: /
+  port: 9091
+  ssl:
+    key-store: classpath:certificate/localhost.jks
+    key-store-password: changeit
+    key-alias: localhost
+    
+############### DATABASE CONFIG ##############
+spring:
+    datasource:  
+      driver-class-name: oracle.jdbc.driver.OracleDriver
+      url: jdbc:oracle:thin:@localhost:1521:XE
+      username: springboot
+      password: admin  
