@@ -12,8 +12,11 @@ server:
     
 ############### DATABASE CONFIG ##############
 spring:
+    jpa:      database-platform: org.hibernate.dialect.Oracle10gDialect      show-sql: true
     datasource:  
-      driver-class-name: oracle.jdbc.driver.OracleDriver
+      driver-class-name: oracle.jdbc.OracleDriver
       url: jdbc:oracle:thin:@localhost:1521:XE
       username: projectdb
-      password: admin  
+      password: admin
+    
+ 

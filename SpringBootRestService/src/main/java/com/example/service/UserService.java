@@ -43,8 +43,13 @@ public class UserService {
 		return Optional.empty();
 		
 	}
-	public AppUser getUserById(Integer id) throws UsernameNotFoundException {
-		return repository.findById(id).get() ;
+	public AppUser getUserById(Integer id)  {
+		AppUser user = repository.findById(id).orElse(null);
+		if(null == user) {
+			throw new UsernameNotFoundException("User not found for id::"+id);
+		}else {
+			return user;
+		}
 	}
 
 	public void deleteUserById(Integer id) {

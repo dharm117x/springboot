@@ -1,6 +1,7 @@
 package com.example.entity;
 
 import java.io.Serializable;
+import java.util.Date;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -17,6 +18,7 @@ public class AppUser implements Serializable{
 	
 	private Integer id;
 	private String name;
+	private Date dob;
 	@NotBlank(message = "{username.not.blank}")
 	private String username;
 	@NotBlank(message = "{password.not.blank}")
@@ -47,6 +49,14 @@ public class AppUser implements Serializable{
 
 	public void setUsername(String username) {
 		this.username = username;
+	}
+
+	public Date getDob() {
+		return dob;
+	}
+
+	public void setDob(Date dob) {
+		this.dob = dob;
 	}
 
 	public String getPassword() {

@@ -23,7 +23,7 @@ public class UserController {
 	@Autowired
 	UserService userService;
 
-	@GetMapping("/userid/{userId}")
+	@GetMapping("/users/{userId}")
 	public AppUser getUserById(@PathVariable Integer userId) {
 		return userService.getUserById(userId);
 	}
