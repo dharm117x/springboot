@@ -1,14 +1,19 @@
 package com.example.controller;
 
 import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.core.io.ByteArrayResource;
 import org.springframework.core.io.Resource;
+import org.springframework.http.ContentDisposition;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.util.StringUtils;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -20,6 +25,7 @@ import com.example.data.FileUploadResponse;
 import com.example.service.FileService;
 
 @RestController
+@CrossOrigin(allowedHeaders = {"responseType"})
 public class FileUploadDownloadController {
 
 	@Autowired
@@ -41,8 +47,8 @@ public class FileUploadDownloadController {
 		return new ResponseEntity<>(response, HttpStatus.OK);
 	}
 
-	@GetMapping("/downloadFile/{fileCode}")
-    public ResponseEntity<?> downloadFile(@PathVariable("fileCode") String fileCode) {
+	@PostMapping("/downloadFile/{fileCode}")
+    public ResponseEntity<?> downloadFile(@PathVariable("fileCode") String fileCode) throws IOException {
         Resource resource = null;
 
         try {
@@ -52,15 +58,25 @@ public class FileUploadDownloadController {
         }
          
         if (resource == null) {
-            return new ResponseEntity<>("File not found", HttpStatus.NOT_FOUND);
+            return new ResponseEntity<>("File not found", HttpStatus.BAD_REQUEST);
         }
          
-        String contentType = "application/octet-stream";
-        String headerValue = "attachment; filename=\"" + resource.getFilename() + "\"";
+        byte[] byteArray = Files.readAllBytes(Paths.get(resource.getURI()));
+        
+        ByteArrayResource res= new ByteArrayResource(byteArray);
+        String filename = resource.getFilename();
+        String contentType = filename.contains("pdf")?"application/pdf":"application/octet-stream";
+        String headerValue = "attachment; filename=\"" + filename + "\"";
          
-        return ResponseEntity.ok()
-                .contentType(MediaType.parseMediaType(contentType))
-                .header(HttpHeaders.CONTENT_DISPOSITION, headerValue)
-                .body(resource);       
+        HttpHeaders hrs = new HttpHeaders();
+        hrs.set(HttpHeaders.CONTENT_TYPE, contentType);
+        hrs.set(HttpHeaders.CONTENT_DISPOSITION, headerValue);
+        
+        ResponseEntity<ByteArrayResource> data = ResponseEntity.ok()
+                .contentType(MediaType.parseMediaType(contentType)).contentLength(res.contentLength())
+                .headers(hrs)
+                .body(res);    
+         
+         return data;
     }
 }

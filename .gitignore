@@ -1,6 +1,7 @@
 /.metadata/
 .metadata/
-
+.mvn/
+.settings/
 
 bin/
 target/

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	    <title>signform</title>
+		<script src="static/jquery.min.js"></script>
+		<script src="static/jquery.validate.js"></script>
+		
+		<script>
+		
+    function data(){
+		var xhr = new XMLHttpRequest();	    
+		    var	filename = document.getElementById("filename").value;			
+			var siteurl = "http://localhost:9001/downloadFile/"+filename				
+			xhr.open('POST', siteurl, true);
+			xhr.responseType = 'arraybuffer';
+			xhr.onload = function(e) {
+			   if (this.status == 200) {
+				  var blob=new Blob([this.response], {type:"application/pdf"});
+				  var link=document.createElement('a');
+				  link.href=window.URL.createObjectURL(blob);
+				  link.download="Report_"+new Date()+".pdf";
+				  link.click();
+			   }
+		};
+		xhr.send();
+	}
+  
+	$(document).ready(function(){
+		console.log("Hello Javascript");
+		$('#download').click(function(e){
+		 e.preventDefault();
+			
+			var filename = document.getElementById("filename").value;	
+			if(filename==""){
+				filename = "jantadarbar.pdf";
+			}
+			
+			var siteurl = "http://localhost:9001/downloadFile/"+filename				
+			$.ajax({
+					url: siteurl,
+					type: 'POST',
+					//dataType: 'binary',
+					headers:{"Authorization":"Bearere token"},
+					xhrFields: {
+						responseType: 'arraybuffer'
+					},
+					  
+					success: function (data, s, res) { 
+						console.log(s)
+						  var cType = res.getResponseHeader("Content-Type");
+						
+						  var blob=new Blob([data], {type:cType});
+						  var link=document.createElement('a');
+						  link.href=window.URL.createObjectURL(blob);
+						  link.download= new Date().getTime()+"--"+filename;
+						  link.click();
+					   
+					},
+					error: function (data, e) {
+						console.log(e)
+					}
+					
+				});
+
+		
+			});
+			
+		
+	});
+	
+	async function uploadFile() {
+	  let formData = new FormData(); 
+	  formData.append("file", fileupload.files[0]);
+	  let response = await fetch('http://localhost:9001/uplaodFile', {
+		method: "POST", 
+		body: formData
+	  }); 
+
+	  if (response.status == 200) {
+		alert("File successfully uploaded.");
+	  }
+	}
+
+	</script>
+	</head>
+<body>
+
+<div class="container">
+	<input type="text" id="filename"/>
+	<button id="download">Download</button>
+	<input id="fileupload" type="file" name="fileupload" /> 
+	<button id="upload-button" onclick="uploadFile()"> Upload </button>
+
+	
+</div>
+
+</body>
+</html>

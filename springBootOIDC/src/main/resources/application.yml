@@ -1,0 +1,17 @@
+spring:
+  security:
+    oauth2:
+      client:
+        registration: 
+          custom-google: 
+            client-id: <client-id>
+            client-secret: <secret>
+        provider:
+          custom-google:
+            issuer-uri: https://accounts.google.com
+       
+logging:
+  level:
+    org.springframework.web.client.RestTemplate: DEBUG
+ 
+               
