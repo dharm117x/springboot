@@ -22,10 +22,10 @@ public class DBMessageSource extends AbstractMessageSource{
 	
 	@Override
 	protected MessageFormat resolveCode(String code, Locale locale) {
-		System.out.println("DBMessageSource.resolveCode()");
+		System.out.println("DBMessageSource.resolveCode()"+code);
 		LanguageEntity language = repository.findByKeyAndLocale(code, locale.getLanguage());
 		if(language== null) {
-			language = repository.findByKeyAndLocale(code, "en");
+			return new MessageFormat("error.message", Locale.ENGLISH);
 		}
 		
 		return new MessageFormat(language.getContent(), locale);

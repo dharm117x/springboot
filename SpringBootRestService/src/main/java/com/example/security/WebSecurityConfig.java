@@ -54,7 +54,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter{
 			.exceptionHandling()
 			.and()
 			.authenticationProvider(provider)
-			.addFilterBefore(authTokeFilter(), AnonymousAuthenticationFilter.class)
+			.addFilterBefore(authTokenFilter(), AnonymousAuthenticationFilter.class)
 			.authorizeRequests()
 			.antMatchers("/api/**").permitAll()
 			.requestMatchers(requiresMatcher)
@@ -68,7 +68,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter{
 	}
 
 	@Bean
-	public AuthTokenFilter authTokeFilter() throws Exception {
+	public AuthTokenFilter authTokenFilter() throws Exception {
 		AuthTokenFilter filter = new AuthTokenFilter(requiresMatcher);
 		filter.setAuthenticationManager(authenticationManager());
 		return filter;

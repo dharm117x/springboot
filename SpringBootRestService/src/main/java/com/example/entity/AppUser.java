@@ -10,6 +10,8 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 import javax.validation.constraints.NotBlank;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
+
 @Entity
 @Table(name="app_user")
 public class AppUser implements Serializable{
@@ -18,6 +20,7 @@ public class AppUser implements Serializable{
 	
 	private Integer id;
 	private String name;
+	@JsonFormat(shape=JsonFormat.Shape.STRING, pattern="dd/MM/yyyy")
 	private Date dob;
 	@NotBlank(message = "{username.not.blank}")
 	private String username;

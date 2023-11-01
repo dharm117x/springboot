@@ -10,7 +10,7 @@ import com.example.model.UserDo;
 @Configuration
 public class ConsumerService {
 
-	@KafkaListener(groupId = "group-string", topics = {"TestTopic"}, containerFactory = "factory")
+	@KafkaListener(groupId = "group-string", topics = {"TestTopic"}, containerFactory = "factory" )
 	public void getData(String meassage) {
 		System.out.println("String Message:" + meassage);
 	}

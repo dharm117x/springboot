@@ -14,44 +14,47 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 
 @EnableWebSecurity
-public class WebSecurityConfig extends WebSecurityConfigurerAdapter{
+public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
 	@Autowired
 	JwtUserDetailsService service;
 	@Autowired
 	JwtTokenFilter filter;
-	
 
 	@Bean
 	@Override
 	protected AuthenticationManager authenticationManager() throws Exception {
 		return super.authenticationManager();
 	}
-	
+
 	@Override
 	protected void configure(AuthenticationManagerBuilder auth) throws Exception {
 		auth.userDetailsService(service).passwordEncoder(passwordEncoder());
 	}
-	
+
 	@Bean
 	public PasswordEncoder passwordEncoder() {
 		return new BCryptPasswordEncoder();
 	}
-	
+
 	@Override
 	public void configure(WebSecurity web) throws Exception {
 		web.ignoring().antMatchers("/static/**");
 	}
-	
+
 	@Override
 	protected void configure(HttpSecurity http) throws Exception {
+		// @formatter:off
 		http.csrf().disable()
-		.authorizeRequests().antMatchers("/auth").permitAll()
+		.authorizeRequests().antMatchers("/auth","/h2-console").permitAll()
 		.anyRequest().authenticated()
 		.and()
 		.sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS)
 		.and()
-		.addFilterBefore(filter, UsernamePasswordAuthenticationFilter.class);
+		.addFilterBefore(filter, UsernamePasswordAuthenticationFilter.class);		 
+		// @formatter:on
+
+
 	}
-	
+
 }

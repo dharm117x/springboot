@@ -37,17 +37,9 @@ public class JwtTokenFilter extends OncePerRequestFilter {
 					UsernamePasswordAuthenticationToken auth = new UsernamePasswordAuthenticationToken(details, null, details.getAuthorities());
 					auth.setDetails(new WebAuthenticationDetailsSource().buildDetails(request));
 					SecurityContextHolder.getContext().setAuthentication(auth);
-				}else {
-					System.out.println("Token not valid....");
 				}
-			}else {
-				System.out.println("Token usnrname not valid..");
 			}
-			
-		}else {
-			System.out.println("Token Not found...");
 		}
-		
 		filterChain.doFilter(request, response);
 	}
 

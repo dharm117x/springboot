@@ -11,7 +11,6 @@ public class UserDo implements Serializable {
 	Long phone;
 
 	public UserDo() {
-		// TODO Auto-generated constructor stub
 	}
 	
 	public UserDo(String name, String email, Long phone) {
