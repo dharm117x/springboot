@@ -2,4 +2,8 @@ server:
   port: 9001
   servlet: 
     context-path: /
+
+logging:
+  level:
+    org.springframework.security: debug
     
