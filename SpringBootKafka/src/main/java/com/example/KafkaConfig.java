@@ -26,7 +26,7 @@ import com.example.model.UserDo;
 public class KafkaConfig {
 
 
-	private static final String LOCALHOST_9092 = "localhost:9092";
+	private static final String KAFKA_BROKER_SERVER = "localhost:9092";
 
 	@Bean
 	public KafkaTemplate<String, String> kafkaTemplate() {
@@ -36,7 +36,7 @@ public class KafkaConfig {
 	@Bean
 	public ProducerFactory<String, String> producerFactory() {
 		Map<String, Object> configs = new HashMap<>();
-		configs.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, LOCALHOST_9092);
+		configs.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, KAFKA_BROKER_SERVER);
 		configs.put(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG, StringSerializer.class);
 		configs.put(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG, StringSerializer.class);
 		
@@ -51,7 +51,7 @@ public class KafkaConfig {
 	@Bean
 	public ProducerFactory<String, UserDo> userProducerFactory() {
 		Map<String, Object> configs = new HashMap<>();
-		configs.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, LOCALHOST_9092);
+		configs.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, KAFKA_BROKER_SERVER);
 		configs.put(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG, StringSerializer.class);
 		configs.put(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG, JsonSerializer.class);
 
@@ -69,7 +69,7 @@ public class KafkaConfig {
 	@Bean
 	public ConsumerFactory<String, String> consumerFactory() {
 		Map<String, Object> configs = new HashMap<>();
-		configs.put(ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG, LOCALHOST_9092);
+		configs.put(ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG, KAFKA_BROKER_SERVER);
 		configs.put(ConsumerConfig.GROUP_ID_CONFIG, "group-string");
 		configs.put(ConsumerConfig.KEY_DESERIALIZER_CLASS_CONFIG, StringDeserializer.class);
 		configs.put(ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG, StringDeserializer.class);
@@ -87,7 +87,7 @@ public class KafkaConfig {
 	@Bean
 	public ConsumerFactory<String, UserDo> userConsumerFactory() {
 		Map<String, Object> configs = new HashMap<>();
-		configs.put(ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG, LOCALHOST_9092);
+		configs.put(ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG, KAFKA_BROKER_SERVER);
 		configs.put(ConsumerConfig.GROUP_ID_CONFIG, "group-json");
 		configs.put(ConsumerConfig.KEY_DESERIALIZER_CLASS_CONFIG, StringDeserializer.class);
 		configs.put(ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG, JsonDeserializer.class);
