@@ -24,26 +24,6 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 @EnableWebSecurity
 @EnableSwagger2
 public class WebConfig extends WebSecurityConfigurerAdapter {
-
-	  @Bean
-	  public Docket api() { 
-	        return new Docket(DocumentationType.SWAGGER_2)  
-	          .select()                                  
-	          .apis(RequestHandlerSelectors.basePackage("com.example.controller"))
-	          .paths(PathSelectors.ant("/api/**"))                     
-	          .build()                                       
-	        .apiInfo(apiInfo());
-	  }
-
-	  private ApiInfo apiInfo() {
-	      return new ApiInfo(
-	        "My REST API", 
-	        "Some custom description of API.", 
-	        "API TOS", 
-	        "Terms of service", "",
-	        "License of API", "API license URL");
-	  }
-	  
 	@Bean  
 	public FilterRegistrationBean<AuthTokenFilter> authTokenFilter() {
 		FilterRegistrationBean<AuthTokenFilter> filterBean = new FilterRegistrationBean<>();
@@ -63,9 +43,11 @@ public class WebConfig extends WebSecurityConfigurerAdapter {
 	    return registrationBean;    
 	}
 	
+	
+	
 	@Override
 	public void configure(WebSecurity web) throws Exception {
-		String[] urls = {"/webjars/**","/v2/api**","/swagger-resources/**","/swagger**","/csrf/**", "/actuator/**"};
+		String[] urls = {"/webjars/**","/v2/api**","/swagger-resources/**","/swagger-ui/**","/swagger**","/csrf/**", "/actuator/**"};
 		web.ignoring().antMatchers(urls);
 	}
 	
@@ -79,6 +61,7 @@ public class WebConfig extends WebSecurityConfigurerAdapter {
 		
 		http.addFilterBefore(authTokenFilter().getFilter(), UsernamePasswordAuthenticationFilter.class);
 		http.addFilterAfter(loggingFilter().getFilter(), UsernamePasswordAuthenticationFilter.class);
+		
 		
 	}	
 }
