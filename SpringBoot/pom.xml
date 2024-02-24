@@ -44,13 +44,6 @@
 		<maven.compiler.source>1.8</maven.compiler.source>
 	</properties>
 
-	<repositories>
-		<repository>
-			<id>orcale</id>
-			<url>http://www.datanucleus.org/downloads/maven2/</url>
-		</repository>
-	</repositories>
-
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
