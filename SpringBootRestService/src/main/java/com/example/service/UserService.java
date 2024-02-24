@@ -41,8 +41,16 @@ public class UserService {
 			return Optional.of(user);
 		}
 		return Optional.empty();
-		
 	}
+	
+	public AppUser getUserByName(String name) {
+		AppUser appUser = repository.findByName(name);
+		if(appUser== null) {
+			throw new UsernameNotFoundException("User not found for name: "+name);
+		}
+		return appUser;
+	}
+	
 	public AppUser getUserById(Integer id)  {
 		AppUser user = repository.findById(id).orElse(null);
 		if(null == user) {

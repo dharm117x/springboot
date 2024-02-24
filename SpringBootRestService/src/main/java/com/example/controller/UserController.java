@@ -23,9 +23,14 @@ public class UserController {
 	@Autowired
 	UserService userService;
 
-	@GetMapping("/users/{userId}")
+	@GetMapping("/users/id/{userId}")
 	public AppUser getUserById(@PathVariable Integer userId) {
 		return userService.getUserById(userId);
+	}
+
+	@GetMapping("/users/name/{name}")
+	public AppUser getUserByName(@PathVariable String name) {
+		return userService.getUserByName(name);
 	}
 
 	@GetMapping("/users")

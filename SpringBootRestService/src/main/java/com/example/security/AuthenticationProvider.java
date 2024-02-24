@@ -28,7 +28,7 @@ public class AuthenticationProvider extends AbstractUserDetailsAuthenticationPro
 	protected UserDetails retrieveUser(String username, UsernamePasswordAuthenticationToken authentication)
 			throws AuthenticationException {
 		Object token = authentication.getCredentials();
-//		Optional optional = userservice.findByToken(token.toString());
+//		Optional optional = userservice.getByToken(token.toString());
 		
 		return Optional.ofNullable(token)
 				.map(String:: valueOf)

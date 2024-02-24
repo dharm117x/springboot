@@ -13,6 +13,9 @@ public interface UserRepository extends JpaRepository<AppUser, Integer>{
 	
 	@Query(value = "select u from AppUser u where u.username =?1 and u.password =?2")
 	Optional<AppUser> login(String username, String password);
+	
 	Optional<AppUser> findByToken(String token);
+	
+	AppUser findByName(String name);
 	
 }
