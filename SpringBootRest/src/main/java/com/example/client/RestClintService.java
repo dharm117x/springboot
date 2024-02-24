@@ -29,7 +29,7 @@ public class RestClintService {
 		headers.setContentType(MediaType.APPLICATION_JSON);
 		headers.setAccept(Arrays.asList((MediaType.APPLICATION_JSON)));
 
-		HttpEntity<String> requestEntity = new HttpEntity<String>("", headers);
+		HttpEntity<String> requestEntity = new HttpEntity<String>(headers);
 		ResponseEntity<List> response = template.exchange(url, HttpMethod.GET, requestEntity, List.class);
 		if (response.getStatusCode().equals(HttpStatus.OK)) {
 			persons = response.getBody();
