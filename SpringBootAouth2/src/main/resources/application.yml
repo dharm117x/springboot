@@ -1,6 +1,3 @@
-server:
-  port: 8080
-
 logging:
   level:
     org.springframework.security: trace
@@ -8,22 +5,12 @@ logging:
 spring:
   security:
     oauth2:
-      authorizationserver:
-        client:
-          oidc-client:
-            registration:
-              client-id: "oidc-client"
-              client-secret: "{noop}secret"
-              client-authentication-methods:
-                - "client_secret_basic"
-              authorization-grant-types:
-                - "authorization_code"
-                - "refresh_token"
-              redirect-uris:
-                - "http://127.0.0.1:8080/login/oauth2/code/oidc-client"
-              post-logout-redirect-uris:
-                - "http://127.0.0.1:8080/"
-              scopes:
-                - "openid"
-                - "profile"
-            require-authorization-consent: true
+      client:
+        registration:
+          github:
+            client-id: 298393db932132996f7c
+            client-secret: e7c803336e6287d41fe0770c77e3170160d7a78d
+            
+          google:
+            client-id: 646579779357-k325tr22leak4j1sdniinjb463cdo22a.apps.googleusercontent.com
+            client-secret: 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
