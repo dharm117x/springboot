@@ -11,3 +11,9 @@ openssl rsa -in jwt.pem
 3. Public key
 openssl rsa -in jwt.pem -pubout
    
+   
+--google clent id and secret--
+https://support.google.com/cloud/answer/6158849?hl=en
+
+https://github.com/settings/applications/new
+   
