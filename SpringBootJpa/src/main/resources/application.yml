@@ -1,0 +1,28 @@
+############### SERVER CONFIG #############
+spring:
+  jpa:
+    #optional - show SQL statements in console. 
+    show-sql: true 
+    properties:
+      javax:
+        persistence:
+          sharedCache: 
+            #required - enable selective caching mode - only entities with @Cacheable annotation will use L2 cache.
+            mode: ENABLE_SELECTIVE 
+      hibernate:
+        ddl-auto: update
+        #optional - enable SQL statements formatting.
+        format_sql: false 
+        #optional - generate statistics to check if L2/query cache is actually being used.
+        generate_statistics: true
+        cache:
+          #required - turn on L2 cache.
+          use_second_level_cache: true
+          #optional - turn on query cache.
+          use_query_cache: true 
+          #Custom ehcache.xml
+          provider_configuration_file_resource_path: ehcache.xml  
+          region:
+            #required - classpath to cache region factory.
+            factory_class: org.hibernate.cache.ehcache.EhCacheRegionFactory
+          
