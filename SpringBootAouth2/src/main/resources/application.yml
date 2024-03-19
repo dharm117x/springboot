@@ -5,15 +5,12 @@ logging:
 spring:
   security:
     oauth2:
-      
       client:
         registration:
           github:
             client-id: 298393db932132996f7c
             client-secret: e7c803336e6287d41fe0770c77e3170160d7a78d
+            
           google:
             client-id: 646579779357-k325tr22leak4j1sdniinjb463cdo22a.apps.googleusercontent.com
             client-secret: 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
-          facebook:
-            client-id: 
-            client-secret: 
