@@ -9,8 +9,8 @@ import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.jpa.repository.QueryHints;
 import org.springframework.stereotype.Repository;
 
-import com.example.user.entity.AppUser;
-import com.example.user.entity.Name;
+import com.example.entity.user.AppUser;
+import com.example.entity.user.Name;
 
 @Repository
 public interface UserRepository extends JpaRepository<AppUser, Integer> {

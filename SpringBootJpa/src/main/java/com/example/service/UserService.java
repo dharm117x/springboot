@@ -8,9 +8,9 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 
+import com.example.entity.user.AppUser;
 import com.example.exception.UsernameNotFoundException;
 import com.example.repository.UserRepository;
-import com.example.user.entity.AppUser;
 
 @Service
 @Transactional

@@ -3,7 +3,7 @@ package com.example.config;
 import javax.persistence.AttributeConverter;
 import javax.persistence.Converter;
 
-import com.example.user.entity.Name;
+import com.example.entity.user.Name;
 
 @Converter
 public class NameConvertor implements AttributeConverter<Name, String> {

@@ -1,4 +1,4 @@
-package com.example.user.entity;
+package com.example.entity.user;
 
 public enum UserType {
 	FULL, PART

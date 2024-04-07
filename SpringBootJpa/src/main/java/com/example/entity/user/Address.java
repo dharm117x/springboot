@@ -1,4 +1,4 @@
-package com.example.user.entity;
+package com.example.entity.user;
 
 import javax.persistence.Embeddable;
 
